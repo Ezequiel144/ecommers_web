@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="main__content">
+
+    <header class="header">
+      <div class="header__nav">
+        <img class="menu" src="./images/icon-menu.svg" alt="icon-menu">
+        <img class="logo" src="./images/logo.svg" alt="logo">
+      </div>
+
+      <nav class="header__list">
+        <ul class="header__list--navbar">
+          <li><a href="#" class="header__list--item">Collections</a></li>
+          <li><a href="#" class="header__list--item">Men</a></li>
+          <li><a href="#" class="header__list--item">Women</a></li>
+          <li><a href="#" class="header__list--item">About</a></li>
+          <li><a href="#" class="header__list--item">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!--navbar__menu--inicio-->
+      <div class="navbar__background">
+        <nav class="menu__list">
+          <img class="close" src="./images/icon-close.svg" alt="close">
+          <ul class="menu__list--navbar">
+            <li><a href="#" class="menu__list--item">Collections</a></li>
+            <li><a href="#" class="menu__list--item">Men</a></li>
+            <li><a href="#" class="menu__list--item">Women</a></li>
+            <li><a href="#" class="menu__list--item">About</a></li>
+            <li><a href="#" class="menu__list--item">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--navbar__menu--final-->
+
+      <div class="content__cart-avatar">
+      <div class="content__cart">
+        <div class="cart__conta">0</div>
+        <img class="cart" src="./images/icon-cart.svg" alt="cart">
+      </div>
+        <img class="avatar" src="./images/image-avatar.png" alt="avatar">
+      </div>
+    </header>
+
+    <section class="content">
+      <article class="conten__img">
+        <div class="content__arrow">
+          <img class="previous" src="./images/icon-previous.svg" alt="previous">
+          <img class="next" src="./images/icon-next.svg" alt="next">
+        </div>
+        <div class="content__thum">
+          <img id="1" src="./images/image-product-1-thumbnail.jpg" alt="img-1">
+          <img id="2" src="./images/image-product-2-thumbnail.jpg" alt="img-2">
+          <img id="3" src="./images/image-product-3-thumbnail.jpg" alt="img-3">
+          <img id="4" src="./images/image-product-4-thumbnail.jpg" alt="img-4">
+        </div>
+      </article>
+      
+      <article class="details">
+        <h2 class="details__company">Sneaker Company</h2>
+        <h1 class="details__title">Fall Limited Edition Sneakers</h1>
+        <p class="details__text">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.        
+        </p>
+        <div class="details__prise">
+          <p class="prise__now">$125.00 <span class="details__descont">50%</span></p>
+          <p class="prise__before">$250.00</p>
+        </div>
+        <div class="details__product-cart">
+          <div class="input">
+            <img class="input_minus" src="./images/icon-minus.svg" alt="minus">
+            <input class="number" type="number" value="0">
+            <img class="input_plus" src="./images/icon-plus.svg" alt="plus">
+          </div>
+          <button class="buttom"> <img src="./images/icon-cart-white.svg" alt="cart"> Add to cart</button>
+        </div>
+      </article>
+    </section>
+    <!--contenido del cart(carrito) inicio-->
+    <div class="cart_content">
+      <p class="cart_content--title">Cart</p>
+      <div class="cart_content--checkout-details">
+        <div class="details__cart">
+          <img class="imgproduct" src="./images/image-product-1-thumbnail.jpg" alt="">
+          <div>
+            <p class="details__cart--product">Fall Limited Edition Sneakerx</p>
+            <p class="details__cart--presie">$125.00 x 0 <span class="details__cart--cost">$375.00</span></p>
+          </div>
+          <img class="details__delete" src="./images/icon-delete.svg" alt="delete">
+        </div>
+        <button class="checkout">Checkout</button>
+      </div>
+    </div>
+    <!--contenido del cart(carrito) final-->
+
+    <!---->
+    <div class="background__opacity">
+      <article class="background__img">
+        <img class="background_close" src="./images/icon-close-orange.svg" alt="close">
+        <img class="background_img_main" src="./images/image-product-1.jpg" alt="img_1">
+        <div class="background__arrow">
+          <img class="previous" src="./images/icon-previous.svg" alt="previous">
+          <img class="next" src="./images/icon-next.svg" alt="next">
+        </div>
+        <div class="background__thum">
+          <img id="b1" src="./images/image-product-1-thumbnail.jpg" alt="img-1">
+          <img id="b2" src="./images/image-product-2-thumbnail.jpg" alt="img-2">
+          <img id="b3" src="./images/image-product-3-thumbnail.jpg" alt="img-3">
+          <img id="b4" src="./images/image-product-4-thumbnail.jpg" alt="img-4">
+        </div>
+      </article>
+    </div>
+
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ezequiel Garcia</a>.
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
