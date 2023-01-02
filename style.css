@@ -131,9 +131,23 @@
         width: 100%;
         background-size: cover;
         background-position-y: -30px;
-        
     }
 
+    .background_img_main{
+        display: none;
+    }
+    
+    .background__thum{
+        display: none;
+    }
+     
+    .background_close{
+        display: none;
+    }
+
+    .background__arrow{
+        display: none;
+    }
     /*.conten__img:hover{
         cursor: pointer;
     }*/
